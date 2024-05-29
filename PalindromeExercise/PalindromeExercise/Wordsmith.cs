@@ -14,10 +14,10 @@ namespace PalindromeExercise
 
             for (int i = word.Length -1; i >= 0; i--)
             {
-             reversed += word[i];
+             reversed += word.ToLower()[i];
             }
 
-            if (reversed == word)
+            if (reversed == word.ToLower())
             {
                 return true;
             }
